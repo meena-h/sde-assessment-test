@@ -1,12 +1,18 @@
-Apologies i couldn't submit on Timeline cause My system acting very slow after connected to docker but i believe i can complete the assessment by End of day but for now i raised a Pull request showing my progress ..Please check .
+Hi Very Good Morning, 
 
-My Approach was breaking the complex problem into Subproblems and solving each problem step by step  and prompting ChatGPT  ( AI tool used ) . later i felt i shud have tried lovable it would have been easy 
+Apologies I couldn't submit on Timeline cause My System is acting very slow after connecting to docker but for now i shared my GitHub repo showing my progress ..Please check .
 
-Created Folder structure as instructed saying Main folder with my name so while merging my code to main it will not affect other candidate assessment code or create any confusion  
-Task-Management-Meena/├── backend/ (npm run dev)├── frontend/ (npm start)
-Implemented Auth ( Login / SignUp ) layer and backend API's used Postman to test 
+My Approach was breaking the complex problem into Subproblems and solving each problem step by step  and prompting ChatGPT  ( AI tool used ) . later i felt i should have tried lovable it would have been easy 
 
-Added extra columns for table users :- QUERY 
+Created Folder structure as instructed saying Main folder with my name 
+
+Task-Management-Meena/
+├── backend/ (npm run dev)
+├── frontend/ (npm start)
+
+Implemented Auth ( Login / SignUp ) layer and backend API's used Postman to test 
+
+Added extra columns for table Users :- QUERY 
 
 ALTER TABLE users
 ADD COLUMN password VARCHAR(255) NOT NULL,
@@ -50,9 +56,9 @@ CREATE TABLE task_checklist (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
-GitHub Pull Request  :-  
-
+GitHub Repo :- https://github.com/meena-h/sde-assessment-test  
 
 Thanks 
 Meena H .
+
+

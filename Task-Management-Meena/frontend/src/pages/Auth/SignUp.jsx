@@ -59,7 +59,7 @@ const SignUp = () => {
 
     return (
         <AuthLayout>
-            <div className="bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-5/12 space-y-6">
+            <div className="bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-5`/12 space-y-6">
                 <h2 className="text-3xl font-bold text-center text-gray-800">Create Account</h2>
                 <p className="text-center text-gray-500">Sign up to get started</p>
 
