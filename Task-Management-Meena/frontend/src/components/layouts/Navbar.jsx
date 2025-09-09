@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 import SideMenu from './SideMenu';
 import {HiOutlineMenu, HiOutlineX } from "react-icons/hi"
 

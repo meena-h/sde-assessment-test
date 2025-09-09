@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthLayout from '../../components/layouts/AuthLayout';
 import Input from '../../components/inputs/Input';
-import axiosInstance from '../../api/axiosInstance';
-import { AUTH } from '../../api/apiPath';
+import axiosInstance from '../../utils/axiosInstance';
+import { AUTH } from '../../utils/apiPath.js';
 import { UserContext } from '../../context/userContext';
 
 const SignUp = () => {
@@ -104,7 +104,7 @@ const SignUp = () => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white font-semibold p-3 rounded-lg hover:from-green-500 hover:via-blue-600 hover:to-purple-700 transition duration-300 disabled:opacity-50"
+                        className="w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-600 text-white font-semibold p-3 rounded-lg hover:from-yellow-500 hover:via-orange-600 hover:to-pink-700 transition duration-300 disabled:opacity-50"
                     >
                         {loading ? 'Signing up...' : 'Sign Up'}
                     </button>

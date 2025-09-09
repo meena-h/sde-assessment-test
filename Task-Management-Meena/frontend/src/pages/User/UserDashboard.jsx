@@ -1,17 +1,13 @@
 import React from 'react';
-import { useUserAuth } from '../../hooks/useUserAuth';
+import { useUserAuth } from '../../hooks/useUserAuth.jsx';
 import { useContext } from 'react';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '../../context/userContext.jsx';
 
 
 const UserDashboard = () => {
     useUserAuth();
 
     const { user } = useContext(UserContext);
-
-    if (loading) {
-        return <div className="flex items-center justify-center h-screen">Loading...</div>;
-    }
 
     return (
         <div className="p-8">

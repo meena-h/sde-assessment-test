@@ -1,5 +1,5 @@
 // src/pages/Auth/Login.jsx
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import AuthLayout from '../../components/layouts/AuthLayout.jsx';
 import Input from '../../components/inputs/Input';
 import axiosInstance from '../../utils/axiosInstance';
@@ -51,7 +51,7 @@ const Login = () => {
 
     return (
         <AuthLayout>
-            <div className="bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-5/12 space-y-6">
+            <div className="bg-white p-8 rounded-xl shadow-2xl w-11/12 md:w-4/12 space-y-6">
                 <h2 className="text-3xl font-bold text-center text-gray-800">Welcome Back</h2>
                 <p className="text-center text-gray-500">Sign in to continue to your account</p>
 
@@ -75,7 +75,7 @@ const Login = () => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold p-3 rounded-lg hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 transition duration-300 disabled:opacity-50"
+                        className="w-full bg-gradient-to-r from-yellow-500 via-orange-500 to-pink-500 text-white font-semibold p-3 rounded-lg hover:from-yellow-600 hover:via-orange-600 hover:to-pink-600 transition duration-300 disabled:opacity-50"
                     >
                         {loading ? 'Logging in...' : 'Login'}
                     </button>

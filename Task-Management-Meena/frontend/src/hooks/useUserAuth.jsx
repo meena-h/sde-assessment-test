@@ -1,9 +1,9 @@
 // src/hooks/useUserAuth.jsx
 import { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from '../contexts/UserContext';
+import { UserContext } from '../context/userContext';
 
-const useUserAuth = () => {
+export const useUserAuth = () => {
     const { loading, user, clearUser } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -19,4 +19,3 @@ const useUserAuth = () => {
     return { loading, user };
 };
 
-export default useUserAuth;
